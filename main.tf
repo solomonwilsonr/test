@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow SSH inbound traffic"
-  vpc_id      = "vpc-xxxxxxxx"  # Replace with your actual VPC ID
+  vpc_id      = "vpc-0d2fbffad834b663c"  # Replace with your actual VPC ID
 
   ingress {
     description = "SSH from anywhere"
