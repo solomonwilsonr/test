@@ -1,4 +1,11 @@
 provider "aws" {
+- task: TerraformTask@5
+  inputs:
+    provider: 'aws'
+    command: 'init'
+    backendServiceAWS: 'aws'
+    backendAWSBucketName: 'test-bucket-dev-env1'
+    backendAWSKey: 'main'
   region = "us-east-1" # Change to your preferred region
 }
 
